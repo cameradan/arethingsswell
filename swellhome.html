@@ -1,23 +1,47 @@
 <!doctype html>
 <html>
-	<head>
-		<title> Are Things Swell</title>
-		<link href="https://cameradan.github.io/arethingsswell/Stlyes/main.css" rel="stylesheet" type="text/css" />
-	</head>
 
-	<body>
-		
-		
-		<div class = Youtube>
-			
-			
-			
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-			<iframe width= "768" height= "432" src="https://www.youtube.com/embed/videoseries?list=PLpbGKw1s8en_oNzWpH3U1VKGP9gJNzGuO" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <title>Are Things Swell?</title>
 
-			</div>
+        <style>
+                body {
+                        background-color: #fc4747;
+                        margin: 0;
+                }
 
+                #content {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100vh;
+                }
 
+                #embed {
+                        width: 768px;
+                        height: 432px;
+                }
 
-	</body>
+                @media (max-width: 768px) {
+                        #embed {
+                                width: 100vw;
+                                height: calc(100vw / 16 * 9);
+                        }
+
+                        #content {
+                                align-items: start;
+                        }
+                }
+        </style>
+</head>
+
+<body>
+        <main id="content">
+                <iframe id="embed" src="https://www.youtube.com/embed/videoseries?list=PLpbGKw1s8en_oNzWpH3U1VKGP9gJNzGuO" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </main>
+</body>
+
 </html>
